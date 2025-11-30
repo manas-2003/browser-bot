@@ -1,0 +1,42 @@
+{
+  "name": "browser-bot",
+  "version": "1.0.0",
+  "description": "Autonomous AI agent for browser automation using NeuroLink and Playwright MCP",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "start": "tsx src/cli.ts",
+    "demo": "tsx demos/amazon-shopping.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "browser-automation",
+    "playwright",
+    "mcp",
+    "neurolink",
+    "llm",
+    "autonomous"
+  ],
+  "author": "Manas Narra",
+  "license": "MIT",
+  "dependencies": {
+    "@juspay/neurolink": "8.0.1",
+    "@modelcontextprotocol/sdk": "^1.23.0",
+    "dotenv": "^16.4.5",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.48",
+    "@types/node": "^22.10.1",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
